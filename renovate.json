@@ -36,7 +36,7 @@
       "commitMessageSuffix": "({{packageFileDir}})"
     },
     {
-      "groupName": "({{parentDir}}) npm minor dependencies",
+      "groupName": "npm minor dependencies",
       "matchManagers": [
         "npm"
       ],
