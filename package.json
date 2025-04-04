@@ -1,0 +1,22 @@
+{
+  "name": "investigation-renovate-monorepo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hiroppy/investigation-renovate-monorepo.git"
+  },
+  "author": "hiroppy <git@hiroppy.me> (https://hiroppy.me/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hiroppy/investigation-renovate-monorepo/issues"
+  },
+  "homepage": "https://github.com/hiroppy/investigation-renovate-monorepo#readme",
+  "description": "",
+  "dependencies": {
+    "chalk": "4"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended",
+    ":semanticCommitTypeAll(chore)",
+    ":enableVulnerabilityAlerts",
+    ":separateMajorReleases",
+    "group:definitelyTyped",
+    "group:monorepos",
+    "group:test"
+  ],
+  "rangeStrategy": "pin",
+  "labels": ["deps"],
+  "packageRules": [
+    {
+      "groupName": "npm patch dependencies",
+      "matchManagers": ["npm"],
+      "matchUpdateTypes": ["patch"],
+      "matchDepTypes": ["dependencies", "devDependencies", "peerDependencies"],
+      "matchPackageNames": ["*"],
+      "automerge": true,
+      "additionalBranchPrefix": "{{parentDir}}-"
+    },
+    {
+      "groupName": "npm minor dependencies",
+      "matchManagers": ["npm"],
+      "matchUpdateTypes": ["minor"],
+      "matchDepTypes": ["dependencies", "devDependencies", "peerDependencies"],
+      "matchPackageNames": ["*"],
+      "additionalBranchPrefix": "{{parentDir}}-"
+    },
+    {
+      "groupName": "npm @types",
+      "matchManagers": ["npm"],
+      "matchPackageNames": ["@types/{/,}**"],
+      "automerge": true,
+      "major": {
+        "automerge": false
+      },
+      "additionalBranchPrefix": "{{parentDir}}-"
+    }
+  ],
+  "ignoreDeps": []
+}
