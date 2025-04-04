@@ -11,6 +11,6 @@
   "license": "MIT",
   "packageManager": "pnpm@10.7.0",
   "dependencies": {
-    "fastify": "4.29.0"
+    "express": "4.20.0"
   }
 }
