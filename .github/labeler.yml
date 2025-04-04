@@ -1,0 +1,15 @@
+root:
+- changed-files:
+  - any-glob-to-any-file: package.json
+backend-a:
+- changed-files:
+  - any-glob-to-any-file: packages/backend/a/package.json
+backend-b:
+- changed-files:
+  - any-glob-to-any-file: packages/backend/b/package.json
+frontend-a:
+- changed-files:
+  - any-glob-to-any-file: packages/frontend/a/package.json
+frontend-b:
+- changed-files:
+  - any-glob-to-any-file: packages/frontend/b/package.json
