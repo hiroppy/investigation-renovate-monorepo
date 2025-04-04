@@ -19,7 +19,8 @@
       "matchDepTypes": ["dependencies", "devDependencies", "peerDependencies"],
       "matchPackageNames": ["*"],
       "automerge": true,
-      "additionalBranchPrefix": "{{parentDir}}-"
+      "additionalBranchPrefix": "{{parentDir}}-",
+      "commitMessageSuffix": "({{baseDir}})"
     },
     {
       "groupName": "({{parentDir}}) npm minor dependencies",
@@ -27,7 +28,8 @@
       "matchUpdateTypes": ["minor"],
       "matchDepTypes": ["dependencies", "devDependencies", "peerDependencies"],
       "matchPackageNames": ["*"],
-      "additionalBranchPrefix": "{{parentDir}}-"
+      "additionalBranchPrefix": "{{parentDir}}-",
+      "commitMessageSuffix": "({{baseDir}})"
     },
     {
       "groupName": "npm @types",
@@ -37,7 +39,8 @@
       "major": {
         "automerge": false
       },
-      "additionalBranchPrefix": "{{parentDir}}-"
+      "additionalBranchPrefix": "{{parentDir}}-",
+      "commitMessageSuffix": "({{baseDir}})"
     }
   ],
   "ignoreDeps": []
