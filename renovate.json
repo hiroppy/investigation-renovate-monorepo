@@ -22,7 +22,7 @@
       "additionalBranchPrefix": "{{parentDir}}-"
     },
     {
-      "groupName": "npm minor dependencies",
+      "groupName": "({{parentDir}}) npm minor dependencies",
       "matchManagers": ["npm"],
       "matchUpdateTypes": ["minor"],
       "matchDepTypes": ["dependencies", "devDependencies", "peerDependencies"],
