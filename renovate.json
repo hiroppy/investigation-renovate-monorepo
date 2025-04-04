@@ -65,7 +65,6 @@
       "matchPackageNames": [
         "*"
       ],
-      "automerge": true,
       "additionalBranchPrefix": "{{parentDir}}-",
       "commitMessageSuffix": "({{packageFileDir}})"
     },
@@ -77,7 +76,6 @@
       "matchPackageNames": [
         "@types/{/,}**"
       ],
-      "automerge": true,
       "major": {
         "automerge": false
       },
