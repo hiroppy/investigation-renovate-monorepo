@@ -11,37 +11,63 @@
   ],
   "prHourlyLimit": 0,
   "rangeStrategy": "pin",
-  "labels": ["deps"],
+  "labels": [
+    "deps"
+  ],
   "packageRules": [
     {
       "groupName": "npm patch dependencies",
-      "matchManagers": ["npm"],
-      "matchUpdateTypes": ["patch"],
-      "matchDepTypes": ["dependencies", "devDependencies", "peerDependencies"],
-      "matchPackageNames": ["*"],
+      "matchManagers": [
+        "npm"
+      ],
+      "matchUpdateTypes": [
+        "patch"
+      ],
+      "matchDepTypes": [
+        "dependencies",
+        "devDependencies",
+        "peerDependencies"
+      ],
+      "matchPackageNames": [
+        "*"
+      ],
       "automerge": true,
       "additionalBranchPrefix": "{{parentDir}}-",
-      "commitMessageSuffix": "({{baseDir}})"
+      "commitMessageSuffix": "({{packageFileDir}})"
     },
     {
       "groupName": "({{parentDir}}) npm minor dependencies",
-      "matchManagers": ["npm"],
-      "matchUpdateTypes": ["minor"],
-      "matchDepTypes": ["dependencies", "devDependencies", "peerDependencies"],
-      "matchPackageNames": ["*"],
+      "matchManagers": [
+        "npm"
+      ],
+      "matchUpdateTypes": [
+        "minor"
+      ],
+      "matchDepTypes": [
+        "dependencies",
+        "devDependencies",
+        "peerDependencies"
+      ],
+      "matchPackageNames": [
+        "*"
+      ],
       "additionalBranchPrefix": "{{parentDir}}-",
-      "commitMessageSuffix": "({{baseDir}})"
+      "commitMessageSuffix": "({{packageFileDir}})"
     },
     {
       "groupName": "npm @types",
-      "matchManagers": ["npm"],
-      "matchPackageNames": ["@types/{/,}**"],
+      "matchManagers": [
+        "npm"
+      ],
+      "matchPackageNames": [
+        "@types/{/,}**"
+      ],
       "automerge": true,
       "major": {
         "automerge": false
       },
       "additionalBranchPrefix": "{{parentDir}}-",
-      "commitMessageSuffix": "({{baseDir}})"
+      "commitMessageSuffix": "({{packageFileDir}})"
     }
   ],
   "ignoreDeps": []
