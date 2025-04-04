@@ -18,7 +18,6 @@
       "matchManagers": [
         "npm"
       ],
-      "matchUpdateTypes": ["major"],
       "matchDepTypes": [
         "dependencies",
         "devDependencies",
