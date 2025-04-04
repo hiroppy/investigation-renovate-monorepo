@@ -9,6 +9,7 @@
     "group:monorepos",
     "group:test"
   ],
+  "prHourlyLimit": 0,
   "rangeStrategy": "pin",
   "labels": ["deps"],
   "packageRules": [
